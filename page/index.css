@@ -35,7 +35,7 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
-    background-image: url(/images/017.jpg);
+    background-image: url(images/017.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: top;
