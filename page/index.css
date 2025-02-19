@@ -35,7 +35,7 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
-    background-image: url(../images/017.jpg);
+    background-image: url(../images/TOP.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: top;
@@ -88,20 +88,28 @@
 .info_text{
     color: #ffe28e;
     padding-left: 5%;
+    width: 60%;
+}
+
+.info_box {
+    /* height: 200px; */
 }
 
 .info_box_list{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .info_list{
     margin: 5px;
+
 }
 
 .info_photo{
-    width: 100%;
+    width: 60%;
+    
 }
 
 .addition{

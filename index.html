@@ -4,14 +4,26 @@
   <meta charset="UTF-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>test</title>
-  <link rel="stylesheet" href="page/index.css"> 
+  <link rel="stylesheet" href="page/index.css">
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+  <script>
+    document.addEventListener( 'DOMContentLoaded', function() {
+      var splide = new Splide( '.splide', {
+        type    : 'loop',
+        // autoplay: true,
+        // interval: 3000,
+      });
+      splide.mount();
+    } );
+  </script>
 </head>
 
 <body>
   <header class="header">
     <div class="header_box">
       <img class="header_logo" src="images/sugar_5940015.png" alt="">
-      <p class="header_text">Название сайта</p>
+      <p class="header_text">DELUX</p>
     </div>
     <p class="text">тел. +7(000) 000 00 00</p>
   </header>
@@ -23,56 +35,103 @@
           <h1 class="intro_header">КАЧЕСТВЕННАЯ УСТАНОВКА НАТЯЖНЫХ ПОТОЛКОВ</h1>
         </div> 
         <div class="intro_box_img">
-          <img class="intro_img" src="images/017.jpg" alt="">
-          <img class="intro_img" src="images/017.jpg" alt="">
-          <img class="intro_img" src="images/017.jpg" alt="">
+          <img class="intro_img" src="images/M1.jpg" alt="">
+          <img class="intro_img" src="images/M2.jpg" alt="">
+          <img class="intro_img" src="images/M3.jpg" alt="">
         </div>
     </section>
 
-    <section class="info">
+    <section class="info splide">
       <h2 class="info_header"> ВЫБЕРИТЕ ПОТОЛОК НА ВАШ ВКУС</h2>
-      <p class="info_text"> &#8212; Решили установить натяжные потолки в зале или спальне, на кухне или в детской, быть может затеяли косметический ремонт во всей квартире - для любого случая Вы сможете найти в наших каталогах массу заманчивых предложений</p>
-      
-      <div class="info_box_list">
-        <div class="info_list">
-          <img class="info_photo" src="images/017.jpg" alt="">
-          <p class="info_text">ПОТОЛОК 001</p>
-          <p class="info_text">Примерное кратное описание потолка. Весь текст на сайте можно поменять</p>
-        </div>
-        <div class="info_list"> 
-          <img class="info_photo" src="images/017.jpg" alt="">
-          <p class="info_text">ПОТОЛОК 002</p>
-          <p class="info_text">Примерное кратное описание потолка. Весь текст на сайте можно поменять</p>
-        </div> 
-        <div class="info_list"> 
-          <img class="info_photo" src="images/017.jpg" alt="">
-          <p class="info_text">ПОТОЛОК 003</p>
-          <p class="info_text">Примерное кратное описание потолка. Весь текст на сайте можно поменять</p>
-        </div>
+      <p class="info_text"> &#8212; Если хотите идеально ровный потолок, выбирайте натяжной. Он подходит практически для всех помещений, а эстетический вид покрытия сохраняется десятилетиями.</p>
+      <p class="info_text"> &#8212; Рассказываем, какие бывают натяжные потолки и как их органично вписать в различные стили интерьера. А поможет с выбором дизайнерских решений наша подборка фото с примерами оформления.</p>
+      <div class="info_box_list splide__track">
+        <ul class="splide__list">
+          <li class="info_list splide__slide">
+            <img class="info_photo" src="images/001.png" alt="">
+            <p class="info_text">ГЛЯНЦЕВЫЕ</p>
+            <p class="info_text">Характерная особенность глянцевого покрытия — отражение света и обстановки, что визуально увеличивает пространство помещения почти вдвое. Если вы хотите сделать комнату более светлой и зрительно поднять высоту потолков, выбирайте этот вариант.</p>
+          </li>
+          <li class="info_list splide__slide"> 
+            <img class="info_photo" src="images/002.jpg" alt="">
+            <p class="info_text">МАТОВЫЕ</p>
+            <p class="info_text">Для матового потолка характерна ровная поверхность, которая напоминает окрашенную штукатурку. Он не преломляет свет, не создает бликов и не отражает обстановку.</p>
+          </li> 
+          <li class="info_list splide__slide"> 
+            <img class="info_photo" src="images/003.png" alt="">
+            <p class="info_text">САТИНОВЫЕ</p>
+            <p class="info_text">Сатиновый потолок занимает промежуточное место между глянцевым и матовым. Он имеет выразительную фактуру, напоминает красивое шелковое полотно, создающее мягкий перламутровый блеск.</p>
+          </li>
+          <li class="info_list splide__slide"> 
+            <img class="info_photo" src="images/004.png" alt="">
+            <p class="info_text">ТКАНЕВЫЕ</p>
+            <p class="info_text">Полотно изготавливается из плотных тканей, пропитанных полиэстером. Такая техника обработки наделяет его повышенной морозостойкостью и прочностью. В отличие от других типов потолков, тканевыми можно оформлять неотапливаемые помещения: например, в загородных домах, на дачах.</p>
+          </li>
+          <li class="info_list splide__slide"> 
+            <img class="info_photo" src="images/005.png" alt="">
+            <p class="info_text">ПАСТЕЛЬНЫЕ</p>
+            <p class="info_text">Светлая пастельная гамма не привлекает внимание к потолку. Он не становится главным акцентом интерьера. Мягкие нежные тона создают приятную умиротворяющую атмосферу. Это хороший выбор для обустройства спальни и детской комнаты. </p>
+          </li>
+          <li class="info_list splide__slide"> 
+            <img class="info_photo" src="images/006.jpg" alt="">
+            <p class="info_text">КОНТРАСТНЫЕ И РАЗНОЦВЕТНЫЕ</p>
+            <p class="info_text">В пределах одного полотна можно комбинировать как разные оттенки одной гаммы, так и контрастные цвета. Прием контраста часто применяется при отделке резных потолков. При этом основной цвет должен быть значительно темнее или насыщеннее дополнительного.</p>
+          </li>
+          <li class="info_list splide__slide"> 
+            <img class="info_photo" src="images/007.jpg" alt="">
+            <p class="info_text">ХАЙ-ТЕК</p>
+            <p class="info_text">Для интерьеров в стиле хай-тек характерны холодные оттенки, острые углы и четкие линии. В оформлении потолков используются глянцевые полотна: актуальны белый, стальной, серебристый, черный цвета. Хорошо смотрится их совмещение.</p>
+          </li>
+          <li class="info_list splide__slide"> 
+            <img class="info_photo" src="images/008.jpg" alt="">
+            <p class="info_text">КЛАССИКА</p>
+            <p class="info_text">Для интерьера в классическом стиле подходит матовое или сатиновое полотно, выдержанное в светлых оттенках. Преимущественно используются белые, бежевые, молочные, серые, кофейные тона.</p>
+          </li>
+          <li class="info_list splide__slide"> 
+            <img class="info_photo" src="images/009.jpg" alt="">
+            <p class="info_text">МИНИМАЛИЗМ</p>
+            <p class="info_text">Беспроигрышное цветовое решение для потолка в минималистичном интерьере — белое, хотя дизайнеры допускают и другие монохромные расцветки — серый или черный. Откажитесь от ярких цветов, фотопечати, многоуровневых конструкций.</p>
+          </li>
+          <li class="info_list splide__slide"> 
+            <img class="info_photo" src="images/010.jpg" alt="">
+            <p class="info_text">ФЬЮЖН</p>
+            <p class="info_text">Стилю фьюжн свойственно совмещение несочетаемых элементов. В одном помещении могут применяться разные дизайнерские приемы. При этом потолок обязательно должен быть светлым — хорошо подойдет глянцевое белое полотно без узоров. </p>
+          </li>
+          <li class="info_list splide__slide"> 
+            <img class="info_photo" src="images/011.jpg" alt="">
+            <p class="info_text">ПРОВАНС</p>
+            <p class="info_text">Помещение в стиле прованс выдержано в теплых натуральных оттенках — уютных и солнечных. Натяжной потолок должен соответствовать атмосфере комфорта и гармонии. </p>
+          </li>
+          <li class="info_list splide__slide"> 
+            <img class="info_photo" src="images/012.jpg" alt="">
+            <p class="info_text">ЛОФТ</p>
+            <p class="info_text">Это индустриальный дизайн, для которого характерно сочетание элементов из дерева, стекла, металла, камня. В комнатах, выдержанных в стиле лофт, можно увидеть натяжные потолки с эффектом состаренной поверхности, фотопечатью с изображением труб, цепей, деревянных балок, кирпичей.</p>
+          </li>  
+        </ul>
       </div>
     </section>
 
     <section class="addition">
-      <img class="addition_img" src="images/017.jpg" alt="">
+      <img class="addition_img" src="images/М0.png" alt="">
       <p class="addition_text">КАЧЕСТВЕННАЯ УСТАНОВКА</p>
         <div class="addition_box">
           <h3 class="addition_box_text_top"> МОНТАЖ НАТЯЖНЫХ ПОТОЛКОВ</h3>
-          <p class="addition_box_text">  &#8212; Решили установить натяжные потолки в зале или спальне, на кухне или в детской, быть может затеяли косметический ремонт во всей квартире - для любого случая Вы сможете найти в наших каталогах массу заманчивых предложений</p>
+          <p class="addition_box_text">  &#8212; Современные натяжные конструкции подходят для установки в любой комнате квартиры. При оформлении учитывайте особенности помещения: габариты, стиль интерьера, цветовую гамму. </p>
         </div>
     </section>
 
     <section class="gallery">
       <h3 class="gallery_text_top">РАНЕЕ ВЫПОЛНЕНЫЕ ПРОЕКТЫ</h3>
-      <p class="gallery_text"> &#8212; Решили установить натяжные потолки в зале или спальне, на кухне или в детской, быть может затеяли косметический ремонт во всей квартире - для любого случая Вы сможете найти в наших каталогах массу заманчивых предложений</p>
+      
       <ul class="gallery_box">
-        <li class="gallery_box_photo"><img class="gallery_img" src="images/017.jpg" alt=""></li>
-        <li class="gallery_box_photo"><img class="gallery_img" src="images/017.jpg" alt=""></li>
-        <li class="gallery_box_photo"><img class="gallery_img" src="images/017.jpg" alt=""></li>
-        <li class="gallery_box_photo"><img class="gallery_img" src="images/017.jpg" alt=""></li>
-        <li class="gallery_box_photo"><img class="gallery_img" src="images/017.jpg" alt=""></li>
-        <li class="gallery_box_photo"><img class="gallery_img" src="images/017.jpg" alt=""></li>
-        <li class="gallery_box_photo"><img class="gallery_img" src="images/017.jpg" alt=""></li>
-        <li class="gallery_box_photo"><img class="gallery_img" src="images/017.jpg" alt=""></li>
+        <li class="gallery_box_photo"><img class="gallery_img" src="images/П1.jpg" alt=""></li>
+        <li class="gallery_box_photo"><img class="gallery_img" src="images/П2.png" alt=""></li>
+        <li class="gallery_box_photo"><img class="gallery_img" src="images/П3.jpg" alt=""></li>
+        <li class="gallery_box_photo"><img class="gallery_img" src="images/П4.jpg" alt=""></li>
+        <li class="gallery_box_photo"><img class="gallery_img" src="images/П5.png" alt=""></li>
+        <li class="gallery_box_photo"><img class="gallery_img" src="images/П6.jpg" alt=""></li>
+        <li class="gallery_box_photo"><img class="gallery_img" src="images/П7.png" alt=""></li>
+        <li class="gallery_box_photo"><img class="gallery_img" src="images/П8.png" alt=""></li>
       </ul>
     </section>
 
