@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>test</title>
   <link rel="stylesheet" href="page/index.css">
+  <script src="./calc.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script>
     document.addEventListener( 'DOMContentLoaded', function() {
       var splide = new Splide( '.splide', {
@@ -113,10 +115,32 @@
 
     <section class="addition">
       <img class="addition_img" src="images/М0.png" alt="">
-      <p class="addition_text">КАЧЕСТВЕННАЯ УСТАНОВКА</p>
+      <!-- <p class="addition_text">КАЧЕСТВЕННАЯ УСТАНОВКА</p> -->
         <div class="addition_box">
           <h3 class="addition_box_text_top"> МОНТАЖ НАТЯЖНЫХ ПОТОЛКОВ</h3>
           <p class="addition_box_text">  &#8212; Современные натяжные конструкции подходят для установки в любой комнате квартиры. При оформлении учитывайте особенности помещения: габариты, стиль интерьера, цветовую гамму. </p>
+          
+          <div class="card">
+            <div class="card-body">
+              <h4>Расчитать цену</h4>
+              <div class="input-group mb-3">
+                <span class="input-group-text">Квадраты</span>
+                <input type="number" min="0" id="area" id="name" class="form-control" placeholder="Введите площадь помещения">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text">Лампы</span>
+                <input type="number" min="0" id="lamps" name="lamps" class="form-control" placeholder="Введите количество приборов освещения">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text">Датчики дыма</span>
+                <input type="number" id="smokeDetectors" name="smokeDetectors" class="form-control" placeholder="Введите количество датчиков дыма">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text">Общая стоимость от</span>
+                <input type="number" min="0" id="total" name="total" class="form-control" readonly>
+              </div>
+            </div>
+          </div>
         </div>
     </section>
 
